@@ -5,14 +5,21 @@
   src: url("/fonts/Gotham\ Rounded\ Light.otf");
 }
 @font-face {
+  font-family: "gothamNormal"; /* Name of the font */
+  src: url("/fonts/Gotham\ Rounded\ Medium.otf");
+}
+@font-face {
   font-family: "gothamBold"; /* Name of the font */
-  src: url("/public/fonts/Gotham\ Rounded\ Bold.otf");
+  src: url("/fonts/Gotham\ Rounded\ Bold.otf");
 }
 
-body {
+* {
   font-family: gothamLight;
 }
 
+.ff_gothamNormal {
+  font-family: gothamNormal;
+}
 .ff_gothamBold {
   font-family: gothamBold;
 }
