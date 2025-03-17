@@ -19,34 +19,33 @@
 
     useEffect(() => {
       const images = gsap.utils.toArray(".box");
+      gsap.set(images, { opacity: 0, scale: 0.8 });
 
-      // सभी इमेज को पहले सेक्शन के सेंटर में स्केल डाउन करें
-      gsap.set(images, {
-        scale: 0,
-        opacity: 0,
+      const tl = gsap.timeline();
+
+      tl.to(images[0], {
+        opacity: 1,
+        scale: 1,
+        duration: 0.5,
+        delay: 0.1,
+        ease: "power2.out",
       });
 
-      // एनिमेशन: पहले सभी इमेज सेंट्रल में दिखेंगी और फिर अपनी जगह पर मूव करेंगी
-      gsap
-        .timeline()
-        .to(images, {
+      tl.to(
+        images.slice(1),
+        {
           opacity: 1,
-          duration: 0.5,
-          stagger: 0.2,
-        })
-        .to(images, {
           scale: 1,
           duration: 0.5,
-          stagger: 0.2,
+          stagger: 0.5, 
           ease: "power2.out",
-        });
+        },
+        "-=0.3" 
+      );
     }, []);
 
     return (
-      <div
-        ref={gridRef}
-        className="grid-container relative min-h-[500px]" // ✅ सेक्शन की हाइट फिक्स की
-      >
+      <div ref={gridRef} className="grid-container relative min-h-[500px]">
         <div className="box box1 lg:!h-[145px]">
           <Image className="w-full xl:h-full" src={img1} alt="img-1" />
         </div>

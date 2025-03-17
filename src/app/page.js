@@ -20,7 +20,7 @@ export default function Home() {
           <ImgGrids />
         </div>
         <div className="z-10 relative px-5">
-          <h2 className="font-normal text-3xl md:text-4xl lg:text-5xl xl:text-[64px] text-[#7670FF] text-center ff_gothamNormal">
+          <h2 className="font-normal text-3xl md:text-4xl lg:text-5xl xl:text-[64px] text-[#7670FF] text-center ff_gothamNormal pt-8">
             Find Your Motor with AI-Powered Agent
           </h2>
           <div className="my-9 flex items-center w-full custom_shadow header_border_gradient max-w-[1460px] mx-auto">

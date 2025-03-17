@@ -45,7 +45,7 @@ const Header = () => {
             }`}
           >
             <div className="flex flex-col lg:flex-row gap-3 items-center lg:items-end">
-              <div className="header_border_gradient_header flex gap-3 px-9  max-lg:flex-col max-lg:!bg-white">
+              <div className="header_border_gradient_header  flex gap-3 px-9  max-lg:flex-col max-lg:!bg-white">
                 {headerData.map((tab, index) => (
                   <div key={index} className="relative py-3 px-4">
                     <Link
