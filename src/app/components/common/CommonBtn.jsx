@@ -6,7 +6,7 @@ const CommonBtn = ({ btnName, btnStyling }) => {
     <>
       <Link
         href={"/"}
-        className={`common_btn px-7 py-4 rounded-full text-white ${btnStyling}`}
+        className={`common_btn px-7 py-4 rounded-full text-white inline-block ${btnStyling}`}
       >
         {btnName}
       </Link>

@@ -11,6 +11,7 @@ import mike from "../../../../public/images/png/mike.png";
 import sendIcon from "../../../../public/images/png/send-icon.png";
 import Image from "next/image";
 import Footer from "@/app/components/common/Footer";
+import CommonBtn from "@/app/components/common/CommonBtn";
 
 const page = () => {
   return (
@@ -59,7 +60,7 @@ const page = () => {
         </div>
 
         <div className="w-full xl:w-7/12 md:px-3">
-          <div className="flex flex-wrap bg-[#0B0B40] rounded-2xl md:px-5 2xl:px-9">
+          <div className="flex flex-wrap justify-center bg-[#0B0B40] rounded-2xl md:px-5 2xl:px-9 pb-7">
             {[1, 1, 1, 1].map((items, index) => (
               <div key={index} className="w-full md:w-1/2 px-4 mt-8">
                 <div className="bg-[#010122] pb-5 rounded-[18px]">
@@ -101,6 +102,9 @@ const page = () => {
                 </div>
               </div>
             ))}
+            <div className="mt-6">
+              <CommonBtn btnName={"Load More"} />
+            </div>
           </div>
         </div>
       </div>
