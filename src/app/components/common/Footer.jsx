@@ -21,11 +21,23 @@ const Footer = () => {
           </p>
         </div>
         <div className="flex gap-6 items-center">
-          <LinkdInIcon />
-          <YouTubeIcon />
-          <TwiterIcon />
-          <FbIcon />
-          <InstaIcon />
+          <span className="cursor-pointer">
+            <LinkdInIcon />
+          </span>
+          <span className="cursor-pointer">
+            <YouTubeIcon />
+          </span>
+          <span className="cursor-pointer">
+            {" "}
+            <TwiterIcon />
+          </span>
+          <span className="cursor-pointer">
+            {" "}
+            <FbIcon />
+          </span>
+          <span className="cursor-pointer">
+            <InstaIcon />
+          </span>
         </div>
         <div className="flex flex-wrap justify-end w-full 2xl:w-auto gap-6">
           <Link href={"/"} className="font-light text-sm text-[#fff]">
