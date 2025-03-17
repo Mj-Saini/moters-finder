@@ -26,15 +26,15 @@ const Header = () => {
 
   return (
     <>
-      <div className={`custom_container mx-auto !pt-6`}>
+      <div className={`mx-auto !pt-6`}>
         <div
-          className={` flex items-center gap-6 justify-between bg-white border-white border rounded-3xl xl:bg-transparent xl:border-transparent  px-6 py-4 xl:p-0 custom_shadow`}
+          className={` flex items-center gap-6 justify-between px-5 md:px-10`}
         >
           <Link href="/">
             <Image
               width={86}
               height={47}
-              className="w-[86px] h-[47px]"
+              className="w-[180px] h-[81px]"
               src={logo}
               alt="logo"
             />
@@ -50,10 +50,10 @@ const Header = () => {
                   <div key={index} className="relative py-3 px-4">
                     <Link
                       href={tab.path}
-                      className={`font-medium text-base capitalize flex items-center gap-3 justify-between duration-300 hover:text-[#2C4C4B]  ${
+                      className={`font-medium text-base capitalize flex items-center gap-3 justify-between duration-300 gradient_text ${
                         pathName === tab.path
                           ? "!text-[#2C4C4B]"
-                          : "text-[#333333]"
+                          : "text-[#fff]"
                       }`}
                     >
                       {tab.tabs}
