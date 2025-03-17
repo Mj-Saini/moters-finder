@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation";
 import Image from "next/image";
 import logo from "../../../../public/images/svg/logo.svg";
 import { headerData } from "./Helper";
+import CommonBtn from "./CommonBtn";
 
 const Header = () => {
   const pathName = usePathname();
@@ -46,7 +47,7 @@ const Header = () => {
             <div className="flex gap-3 items-end">
               <div className="header_border_gradient flex gap-3 px-9">
                 {headerData.map((tab, index) => (
-                  <div key={index} className="relative py-3 px-8">
+                  <div key={index} className="relative py-3 px-4">
                     <Link
                       href={tab.path}
                       className={`font-medium text-base capitalize flex items-center gap-3 justify-between duration-300 hover:text-[#2C4C4B]  ${
@@ -71,14 +72,8 @@ const Header = () => {
                 </Link>
               </div>
             </div>
-            <div className={`hidden gap-6 items-center lg:flex `}>
-              <Link
-                href={"/auth"}
-                className={`capitalize font-bold text-[#fff] bg-[#2C4C4B] rounded-2xl px-5 py-3  whitespace-nowrap`}
-              >
-                Sign Up
-              </Link>
-            </div>
+
+            <CommonBtn btnName="sign in" btnStyling="" />
             <div
               onClick={() => setToggleNav(!toggleNav)}
               className="flex flex-col justify-between h-5 w-8 lg:hidden z-[100] relative cursor-pointer duration-300"

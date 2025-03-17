@@ -1,33 +1,14 @@
 export const headerData = [
   {
-    tabs: "home",
-    path: "/#home",
-  },
-
-  {
-    tabs: "Our Offerings",
-    path: "/",
-    submenu: [
-      { label: "solutions", path: "/#solutions" },
-      { label: "services", path: "/#services" },
-    ],
-  },
-
-  {
-    tabs: "Testimonials",
-    path: "/#testimonials",
+    tabs: "buy",
+    path: "/buy",
   },
   {
-    tabs: "contact us",
-    path: "/#contacts-us",
+    tabs: "sell",
+    path: "/sell",
   },
   {
-    tabs: "about us",
-    path: "#",
-    submenu: [
-      { label: "About Us", path: "/about-us" },
-      { label: "our partners", path: "/#our-technology-partners" },
-      { label: "Our Customers", path: "/#our-customers" },
-    ],
+    tabs: "rent",
+    path: "/rent",
   },
 ];
