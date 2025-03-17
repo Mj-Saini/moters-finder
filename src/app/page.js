@@ -26,7 +26,7 @@ export default function Home() {
           </h2>
           <div className="my-9 flex items-center w-full custom_shadow header_border_gradient max-w-[1460px] mx-auto">
             <input
-              className="w-[75%] relative z-10  ms-6 p-5 text-white font-light text-2xl md:text-3xl lg:text-4xl xl:text-[40px]"
+              className="w-[75%] relative outline-0 z-10  ms-6 p-5 text-white font-light text-2xl md:text-3xl lg:text-4xl xl:text-[40px]"
               type="text"
               placeholder="| Ask me anything about motors..."
             />
