@@ -16,7 +16,6 @@ export default function Home() {
           src={bgImg}
           alt="bgImg"
         />
-        {/* <div className="hero_bg_gradient absolute top-0 left-0 w-full h-full z-[1]"></div> */}
         <div className="relative z-10 px-5">
           <ImgGrids />
         </div>
@@ -26,15 +25,23 @@ export default function Home() {
           </h2>
           <div className="my-9 flex items-center w-full custom_shadow header_border_gradient max-w-[1460px] mx-auto">
             <input
-              className="w-[75%] relative z-10  ms-6 p-5 text-white font-light text-2xl md:text-3xl lg:text-4xl xl:text-[40px]"
+              className="w-[75%] relative z-10  md:ms-6 p-3 md:p-5 text-white font-light text-xl md:text-3xl lg:text-4xl xl:text-[40px] outline-none"
               type="text"
               placeholder="| Ask me anything about motors..."
             />
-            <div className="flex gap-3.5 items-center relative z-10 p-5">
-              <Image className="w-[85px] h-[85px]" src={lens} alt="img" />
-              <Image className="w-20 h-20" src={mike} alt="img" />
+            <div className="flex gap-2 md:gap-3.5 items-center relative z-10 p-3 md:p-5">
               <Image
-                className="w-[115px] h-[115px] ms-7"
+                className="w-10 xl:w-[85px] h-10 xl:h-[85px] cursor-pointer hidden md:block"
+                src={lens}
+                alt="img"
+              />
+              <Image
+                className="w-10 xl:w-20 h-10 xl:h-20 cursor-pointer hidden md:block"
+                src={mike}
+                alt="img"
+              />
+              <Image
+                className="w-12 xl:w-[115px] h-12 xl:h-[115px] lg:ms-7 cursor-pointer"
                 src={sendIcon}
                 alt="img"
               />
