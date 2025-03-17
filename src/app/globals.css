@@ -5,7 +5,7 @@
   src: url("/fonts/Gotham\ Rounded\ Light.otf");
 }
 @font-face {
-  font-family: "gothamNormal"; /* Name of the font */
+  font-family: "gothamMedium"; /* Name of the font */
   src: url("/fonts/Gotham\ Rounded\ Medium.otf");
 }
 @font-face {
@@ -17,13 +17,16 @@
   font-family: gothamLight;
 }
 
-.ff_gothamNormal {
-  font-family: gothamNormal;
+.ff_gothamMedium {
+  font-family: gothamMedium;
 }
 .ff_gothamBold {
   font-family: gothamBold;
 }
 
+.custom_bg_gradiant {
+  background: linear-gradient(90deg, #7670ff 0%, #5b42ff 100%);
+}
 .header_border_gradient {
   position: relative;
   padding: 4px;
@@ -241,11 +244,3 @@
     grid-row: auto;
   }
 }
-
-
-
-
-
-
-
-
