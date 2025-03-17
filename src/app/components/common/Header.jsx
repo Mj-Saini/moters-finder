@@ -44,8 +44,8 @@ const Header = () => {
               !toggleNav ? "-left-[100vw]" : "left-0"
             }`}
           >
-            <div className="flex gap-3 items-end">
-              <div className="header_border_gradient flex gap-3 px-9">
+            <div className="flex flex-col lg:flex-row gap-3 items-center lg:items-end">
+              <div className="header_border_gradient_header  flex gap-3 px-9  max-lg:flex-col max-lg:!bg-white">
                 {headerData.map((tab, index) => (
                   <div key={index} className="relative py-3 px-4">
                     <Link
@@ -53,7 +53,7 @@ const Header = () => {
                       className={`font-medium text-base capitalize flex items-center gap-3 justify-between duration-300 gradient_text ${
                         pathName === tab.path
                           ? "!text-[#2C4C4B]"
-                          : "text-[#fff]"
+                          : "text-[#7670FF] lg:text-[#fff]"
                       }`}
                     >
                       {tab.tabs}
@@ -74,28 +74,28 @@ const Header = () => {
             </div>
 
             <CommonBtn btnName="sign in" btnStyling="" />
-            <div
-              onClick={() => setToggleNav(!toggleNav)}
-              className="flex flex-col justify-between h-5 w-8 lg:hidden z-[100] relative cursor-pointer duration-300"
-            >
-              <span
-                className={` border-[3px] w-full rounded-sm duration-300 ${
-                  toggleNav
-                    ? "translate-y-[7px] -rotate-45 border-[#2C4C4B]"
-                    : "border-[#2C4C4B]"
-                }`}
-              ></span>
-              <span
-                className={` border-[3px] w-full rounded-sm duration-300 ${
-                  toggleNav ? "rotate-45 border-[#2C4C4B]" : "border-[#2C4C4B]"
-                }`}
-              ></span>
-              <span
-                className={` border-[3px] w-full rounded-sm duration-300 ${
-                  toggleNav ? "opacity-0 border-[#2C4C4B]" : "border-[#2C4C4B]"
-                }`}
-              ></span>
-            </div>
+          </div>
+          <div
+            onClick={() => setToggleNav(!toggleNav)}
+            className="flex flex-col justify-between h-5 w-8 lg:hidden z-[100] relative cursor-pointer duration-300"
+          >
+            <span
+              className={` border-[3px] w-full rounded-sm duration-300 ${
+                toggleNav
+                  ? "translate-y-[7px] -rotate-45 border-[#7670FF]"
+                  : "border-[#7670FF]"
+              }`}
+            ></span>
+            <span
+              className={` border-[3px] w-full rounded-sm duration-300 ${
+                toggleNav ? "rotate-45 border-[#7670FF]" : "border-[#7670FF]"
+              }`}
+            ></span>
+            <span
+              className={` border-[3px] w-full rounded-sm duration-300 ${
+                toggleNav ? "opacity-0 border-[#7670FF]" : "border-[#7670FF]"
+              }`}
+            ></span>
           </div>
         </div>
       </div>
