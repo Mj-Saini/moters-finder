@@ -42,6 +42,18 @@ export const Cars_for_Sell = [
     text: "Cadillac Escalade Premium Luxury",
     date: "2021  |  10,721 km |  Left Hand",
   },
+  {
+    car_img: list_car3,
+    car_number: "Sell - AED 345,000",
+    text: "Cadillac Escalade Premium Luxury",
+    date: "2021  |  10,721 km |  Left Hand",
+  },
+  {
+    car_img: list_car4,
+    car_number: "Sell - AED 345,000",
+    text: "Cadillac Escalade Premium Luxury",
+    date: "2021  |  10,721 km |  Left Hand",
+  },
 ];
 
 
