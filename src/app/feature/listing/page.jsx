@@ -15,15 +15,15 @@ import CommonBtn from "@/app/components/common/CommonBtn";
 
 const page = () => {
   return (
-    <div className=" min-h-[calc(100vh-106px)] bg_img_hero">
-      <Image
+    <div className=" min-h-[calc(100vh-106px)] ">
+      {/* <Image
         className="absolute top-0 left-0 w-full min-h-[calc(100vh-106px)] z-0 "
         src={bgimg}
         alt="bgImg"
-      />
+      /> */}
 
       <div className="z-10 relative">
-        <Image className=" w-full z-0 " src={brandImg} alt="bgImg" />
+        <Image className="w-full z-0" src={brandImg} alt="bgImg" />
       </div>
 
       <div className="z-10 relative flex flex-wrap justify-center mt-[51px] px-5 lg:px-10">
