@@ -6,7 +6,7 @@ import list_car4 from "../../../../public/images/png/list_car4.png"
 export const headerData = [
   {
     tabs: "buy",
-    path: "/buy",
+    path: "/feature/listing",
   },
   {
     tabs: "sell",

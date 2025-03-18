@@ -29,11 +29,7 @@ const page = () => {
 
   return (
     <div className="min-h-[calc(100vh-106px)] bg_img_hero">
-      <Image
-        className="absolute top-0 left-0 w-full min-h-[calc(100vh-106px)] z-0 "
-        src={bgimg}
-        alt="bgImg"
-      />
+    
 
       <div className="z-10 relative">
         <Image className="w-full z-0" src={brandImg} alt="bgImg" />
@@ -121,10 +117,6 @@ const page = () => {
             </div>
           </div>
         </div>
-      </div>
-
-      <div className="relative z-10 px-5">
-        <Footer />
       </div>
     </div>
   );
