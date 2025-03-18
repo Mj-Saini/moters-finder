@@ -2,9 +2,6 @@ import React from "react";
 import bgimg from "../../../../public/images/png/welcome-bg-img.png";
 import brandImg from "../../../../public/images/png/brands.png";
 import list_ai from "../../../../public/images/png/list_ai.png";
-import list_car from "../../../../public/images/png/list_car.png";
-import list_car_brand from "../../../../public/images/png/list_car_brand.png";
-import list_car2 from "../../../../public/images/png/list_car2.png";
 
 import lens from "../../../../public/images/png/google-lens.png";
 import mike from "../../../../public/images/png/mike.png";
@@ -12,6 +9,8 @@ import sendIcon from "../../../../public/images/png/send-icon.png";
 import Image from "next/image";
 import Footer from "@/app/components/common/Footer";
 import CommonBtn from "@/app/components/common/CommonBtn";
+import SimilarCard from "@/app/components/common/SimilarCard";
+import { Cars_for_Sell } from "@/app/components/common/Helper";
 
 const page = () => {
   return (
@@ -60,52 +59,51 @@ const page = () => {
         </div>
 
         <div className="w-full xl:w-7/12 md:px-3">
-          <div className="flex flex-wrap justify-center bg-[#0B0B40] rounded-2xl md:px-5 2xl:px-9 pb-7">
-            {[1, 1, 1, 1].map((items, index) => (
-              <div key={index} className="w-full md:w-1/2 px-4 mt-8">
-                <div className="bg-[#010122] pb-5 rounded-[18px]">
-                  <div className="relative">
-                    <Image
-                      className=" h-[200px] w-full z-0 "
-                      src={list_car}
-                      alt="bgImg"
-                    />
 
-                    <div>
-                      <Image
-                        className="absolute bottom-0 h-[65px] z-0 "
-                        src={list_car_brand}
-                        alt="bgImg"
-                      />
-                    </div>
-                  </div>
-                  <div className="px-5">
-                    <h3 className="text-white text-[18px] lg:text-xl">
-                      Cadillac Escalade Premium Luxury
-                    </h3>
-                    <h3 className="text-white text-base lg:text-xl pt-3 pb-2">
-                      Sell - AED 345,000
-                    </h3>
-                    <h3 className="text-white text-lg  lg:text-xl">
-                      2021 | 10,721 km | Left Hand
-                    </h3>
-                    <button
-                      style={{
-                        background:
-                          "linear-gradient(22.74deg, #F800C0 0%, #FE8A70 82.88%)",
-                      }}
-                      className="text-lg md:text-[24px] px-5 w-full text-center lg:px-[90px] py-[10px] rounded-2xl text-white font-semibold mt-4"
-                    >
-                      Chat with Us
-                    </button>
-                  </div>
-                </div>
+          <div className="bg-[#0B0B40] rounded-2xl md:px-5 2xl:px-[28px] pb-7 pt-[23px]" >
+
+
+            <div className="sm:flex  items-center justify-between">
+              <p className="font-normal 2xl:text-[24px] me-[10px] text-[18px] leading-[150%] text-white text-center sm:text-start">
+                Cars for Sell 12424
+              </p>
+
+              <div className=" sm:mt-0 mt-[20px] border-[1px] border-gradient-to-r from-[#7670FF] to-[#5B42FF] rounded-[90px] shadow-[0px_0px_8px_0px_#4B4CFF] flex justify-between me-[10 px] ">
+                <button className="font-normal 2xl:text-[20px] text-[16px] leading-[150%] text-white border-blue-600 py-[9px] px-[15px] cursor-pointer rounded-[90px] hover:bg-gradient-to-r hover:from-[#7670FF] hover:to-[#5B42FF] hover:shadow-[0px_0px_8px_0px_#4B4CFF]">
+                  Featured
+                </button>
+                <button className="font-normal 2xl:text-[20px] text-[16px] leading-[150%] text-white border-blue-600 py-[9px] px-[15px] cursor-pointer rounded-[90px] hover:bg-gradient-to-r hover:from-[#7670FF] hover:to-[#5B42FF] hover:shadow-[0px_0px_8px_0px_#4B4CFF]">
+                  Company
+                </button>
+                <button className="font-normal 2xl:text-[20px] text-[16px] leading-[150%] text-white border-blue-600 py-[9px] px-[15px] cursor-pointer rounded-[90px] hover:bg-gradient-to-r hover:from-[#7670FF] hover:to-[#5B42FF] hover:shadow-[0px_0px_8px_0px_#4B4CFF]">
+                  Listing
+                </button>
               </div>
-            ))}
-            <div className="mt-6">
-              <CommonBtn btnName={"Load More"} />
+
+              <div >
+                <button className="font-normal flex items-center mx-auto sm:mx-0 mt-[20px] sm:mt-0   2xl:text-[20px] text-[16px] leading-[150%] text-white border-blue-600 py-[9px] px-[22px] cursor-pointer rounded-[90px] bg-gradient-to-r from-[#7670FF] to-[#5B42FF] shadow-[0px_0px_8px_0px_#4B4CFF]">
+                  Sort & Filter
+                  <span className="ms-[10px]">
+                    <svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M7.35044 9.6252C6.95955 10.2571 6.04045 10.2571 5.64956 9.6252L0.948823 2.02607C0.536717 1.35987 1.0159 0.5 1.79926 0.5L11.2007 0.500001C11.9841 0.500001 12.4633 1.35987 12.0512 2.02607L7.35044 9.6252Z" fill="white" />
+                    </svg>
+                  </span>
+                </button>
+              </div>
             </div>
+            <div className="flex flex-wrap justify-center  ">
+              {Cars_for_Sell.map((items, index) => (
+                <div key={index} className="w-full md:w-1/2 px-4 mt-8">
+                  <SimilarCard card={items} />
+                </div>
+              ))}
+              <div className="mt-6">
+                <CommonBtn btnName={"Load More"} />
+              </div>
+            </div>
+
           </div>
+
         </div>
       </div>
 
