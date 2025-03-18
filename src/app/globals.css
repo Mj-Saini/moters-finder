@@ -126,15 +126,16 @@
   transform: translate(-50%, -50%);
   opacity: 0;
   animation: moveImages 4.5s ease-in-out forwards;
+  transition: all 5s ease-in-out;
 }
 
 .box1 .animate {
   animation: moveImages1 4.5s ease-in-out forwards;
 }
-.box2 .animate {
+/* .box2 .animate {
   animation: moveImages2 4.5s ease-in-out forwards;
-}
-.box3 .animate {
+} */
+/* .box3 .animate {
   animation: moveImages3 4.5s ease-in-out forwards;
 }
 .box4 .animate {
@@ -148,31 +149,20 @@
 }
 .box8 .animate {
   animation: moveImages8 4.5s ease-in-out forwards;
-}
+} */
 
 @keyframes moveImages1 {
   0% {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    opacity: 0;
-    transform: translate(-50%, -50%);
   }
 
-  50% {
+  15% {
     opacity: 1;
     position: relative;
-    top: 0;
-    left: 0;
-    transform: translate(0, 0), scale(0.5);
     transform: translate(0, 0);
   }
   100% {
     opacity: 1;
-    position: static;
-    top: 0;
-    left: 0;
-    transform: translate(0, 0), scale(0.5);
+    position: relative ;
     transform: translate(0, 0);
   }
 }
@@ -259,47 +249,35 @@
   0% {
     position: absolute;
     top: 50%;
-    left: 50%;
+    right: 50%;
     opacity: 0;
     transform: translate(-50%, -50%), scale(0.5);
   }
 
-  50% {
+  100% {
     opacity: 1;
     position: relative;
     top: 0;
     right: 0;
     transform: translate(0, 0), scale(1);
   }
-  100% {
-    opacity: 1;
-    position: static;
-    top: 0;
-    right: 0;
-    transform: translate(0, 0), scale(1);
-  }
+
 }
 @keyframes moveImages6 {
   0% {
     position: absolute;
     top: 50%;
-    left: 50%;
+    right: 50%;
     opacity: 0;
     transform: translate(-50%, -50%), scale(0.5);
   }
 
-  50% {
-    opacity: 1;
-    position: relative;
-    top: 0;
-    right: 0;
-    transform: translate(0, 0), scale(1);
-  }
+
   100% {
     opacity: 1;
-    position: static;
-    top: 0;
-    right: 0;
+    position: relative;
+    top: auto;
+    right: auto;
     transform: translate(0, 0), scale(1);
   }
 }
