@@ -44,6 +44,12 @@
 .card_shadow {
   box-shadow: 0px 0px 8px rgba(75, 76, 255, 0.1);
 }
+.border_gradient {
+    border: 2px solid transparent;
+    /* border-radius: 100%; */
+    background: linear-gradient(#141546, #141546) padding-box,
+        linear-gradient(to right, #7670FF, #5B42FF) border-box;
+}
 
 .header_border_gradient {
   position: relative;
