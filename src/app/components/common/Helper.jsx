@@ -1,7 +1,7 @@
 export const headerData = [
   {
     tabs: "buy",
-    path: "/buy",
+    path: "/feature/listing",
   },
   {
     tabs: "sell",
