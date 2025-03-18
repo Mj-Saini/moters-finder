@@ -26,7 +26,7 @@ const Header = () => {
 
   return (
     <>
-      <div className={`mx-auto !pt-6`}>
+      <div className={`mx-auto !pt-6 `}>
         <div
           className={` flex items-center gap-6 justify-between px-5 md:px-10`}
         >
