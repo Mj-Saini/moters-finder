@@ -7,9 +7,8 @@ import Image from "next/image";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
-import { Like_icon, Location_icon, Share_icon } from "@/app/components/common/Icons";
+import { Like_icon, Location_icon, Share_icon, Star_fill_icon, Star_unfill_icon, Upload_icon } from "@/app/components/common/Icons";
 import CommonBtn from "@/app/components/common/CommonBtn";
-import Link from "next/link";
 
 const page = () => {
   var settings = {
@@ -21,10 +20,10 @@ const page = () => {
     slidesToShow: 1,
     arrows: false
   };
-  return <div className=" min-h-[calc(100vh-106px)] px-5">
+  return <div className=" min-h-[calc(100vh-106px)] px-5 listing_detail_page">
     <div className="flex flex-wrap">
       <div className="card_bg_gradient  w-1/2 p-6  rounded-3xl card_shadow"  >
-        <div className="listing_detail_page mb-6">
+        <div className=" mb-6">
           <Slider {...settings}>
             {[1, 1, 1, 1].map((items, index) => (
               <div key={index} className="relative">
@@ -104,9 +103,28 @@ const page = () => {
           <p className=" font-[700] text-[20px] text-[#F800C0] ">Write a Review </p>
           <p className="font-[700] text-[20px] text-white ">Read Reviews</p>
         </div>
-        <div>
-          <Image src={avtar_mini_img} alt="avtar_mini_img" />
-          <p className=" text-[24px] font-[350] leading-[150%]">Simon Quitzon</p>
+        <div className="flex justify-between items-center">
+          <div> <Image src={avtar_mini_img} alt="avtar_mini_img" /></div>
+          <p className=" text-[24px] font-[700] leading-[150%] text-white">Simon Quitzon</p>
+          <div className="flex gap-2">
+            <Star_fill_icon />
+            <Star_unfill_icon />
+            <Star_unfill_icon />
+            <Star_unfill_icon />
+            <Star_unfill_icon />
+          </div>
+          <div>
+            <button className="flex gap-7 border_linear_gradient px-5 py-4 custom_shadow cursor-pointer">
+              <span className="text-[20px] font-[700] leading-[150%] text-white">Add some photos</span>
+              <Upload_icon />
+
+            </button>
+
+          </div>
+        </div>
+        <div className="mt-8 mb-3">
+          <input className="border_linear_gradient custom_shadow p-8" type="text" name="" placeholder="Type your review here..." id="" />
+          <CommonBtn btnName={"Submit Review"} btnStyling={""} />
         </div>
       </div>
 
