@@ -19,7 +19,7 @@ const ReadyToMove = () => {
           <CommonBtn btnName={" Enquiry Now"} />
         </div>
       </div>
-      <div className="flex gap-5 lg:gap-10 justify-center mt-16 pb-12 flex-wrap">
+      <div className="flex gap-5 lg:gap-10 justify-center mt-16 flex-wrap">
         <Image
           src={appstore}
           alt="App Store"

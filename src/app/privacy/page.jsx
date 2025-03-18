@@ -6,8 +6,7 @@ const page = () => {
     <>
       <div className="relative min-h-screen bg-cover bg-center">
         {/* Black overlay */}
-        <div className="absolute inset-0 bg-[#01111b]  opacity-80"></div>
-        <div className="max-w-[1815px] px-5 mx-auto relative z-50">
+        <div className="max-w-[1815px] px-5 lg:px-10 mx-auto relative z-50">
           <h2 className=" font-normal text-xl sm:text-xl md:text-2xl lg:text-[47px] text-white ">
             Privacy
           </h2>

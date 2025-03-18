@@ -5,7 +5,6 @@ import lens from "../../public/images/png/google-lens.png";
 import mike from "../../public/images/png/mike.png";
 import sendIcon from "../../public/images/png/send-icon.png";
 import ball from "../../public/images/png/Group 1000009390.png";
-import Footer from "./components/common/Footer";
 
 export default function Home() {
   return (
@@ -51,9 +50,6 @@ export default function Home() {
             {" "}
             <Image src={ball} alt="img" /> Register with Motors
           </h2>
-        </div>
-        <div className="relative z-10 px-5">
-          <Footer />
         </div>
       </div>
     </>
