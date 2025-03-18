@@ -29,7 +29,9 @@
 .ff_gothamBold {
   font-family: gothamBold;
 }
-
+.scroll_hide::-webkit-scrollbar {
+  display: none;
+}
 .custom_bg_gradiant {
   background: linear-gradient(90deg, #7670ff 0%, #5b42ff 100%);
 
